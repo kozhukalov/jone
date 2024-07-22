@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jone"
+version = "0.0.1"
+description = ""
+authors = [
+    { name = "GreenLab", email = "greenlab@jinr.ru" }
+]
+license = { text = "Apache License, Version 2.0" }
+requires-python = ">=3.8"
+dependencies = [
+    "click>=8.1.3",
+    "PyYAML>=6.0",
+    "pyone",
+]
+
+[project.scripts]
+jone = 'jone:jone'
+
+[tool.setuptools]
+packages = ["jone"]
